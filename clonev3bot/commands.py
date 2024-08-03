@@ -1,8 +1,4 @@
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
-
-# Clone Code Credit : YT - @Tech_VJ / TG - @VJ_Bots / GitHub - @VJBots
+#MaviMods
 
 import os, string, logging, random, asyncio, time, datetime, re, sys, json, base64
 from Script import script
@@ -11,7 +7,7 @@ from pyrogram.errors import ChatAdminRequired, FloodWait
 from pyrogram.types import *
 from database.ia_filterdb import Media, get_file_details, unpack_new_file_id, get_bad_files
 from database.users_chats_db import db
-from CloneTechVJ.database.clone_bot_userdb import clonedb
+from clonev3bot.database.clone_bot_userdb import clonedb
 from info import *
 from shortzy import Shortzy
 from utils import get_size, temp, get_seconds, get_clone_shortlink
