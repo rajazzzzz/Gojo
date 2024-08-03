@@ -9,7 +9,7 @@ from v3bot.bot import multi_clients, work_loads, MaviV3Bot
 
 
 async def initialize_clients():
-    multi_clients[0] = TechVJBot
+    multi_clients[0] = MaviV3Bot
     work_loads[0] = 0
     all_tokens = TokenParser().parse_from_env()
     if not all_tokens:
