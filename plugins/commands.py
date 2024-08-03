@@ -23,11 +23,11 @@ async def start(client, message):
     await message.react(emoji="🔥", big=True)
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-            InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('𝖠𝖣𝖣 𝖬𝖤 𝖳𝖮 𝖸𝖮𝖴𝖱 𝖦𝖱𝖮𝖴𝖯', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ],[
-            InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url='https://t.me/cinemabotx')
+            InlineKeyboardButton('𝖬𝖮𝖵𝖨𝖤 𝖦𝖱𝖮𝖴𝖯', url='https://t.me/cinemabotx')
         ],[
-            InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+            InlineKeyboardButton('𝖩𝖮𝖨𝖭 𝖴𝖯𝖣𝖠𝖳𝖤 𝖢𝖧𝖠𝖭𝖭𝖤𝖫', url=CHNL_LNK)
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
@@ -43,25 +43,25 @@ async def start(client, message):
     if len(message.command) != 2:
         if PREMIUM_AND_REFERAL_MODE == True:
             buttons = [[
-                InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                InlineKeyboardButton('𝖠𝖣𝖣 𝖬𝖤 𝖳𝖮 𝖸𝖮𝖴𝖱 𝖦𝖱𝖮𝖴𝖯', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+                InlineKeyboardButton('𝖬𝖮𝖵𝖨𝖤 𝖦𝖱𝖮𝖴𝖯', url=GRP_LNK)
             ],[
-                InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+                InlineKeyboardButton('𝖧𝖤𝖫𝖯', callback_data='help'),
+                InlineKeyboardButton('𝖠𝖡𝖮𝖴𝖳', callback_data='about')
             ],[
-                InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+                InlineKeyboardButton('𝖩𝖮𝖨𝖭 𝖴𝖯𝖣𝖠𝖳𝖤 𝖢𝖧𝖠𝖭𝖭𝖤𝖫', url=CHNL_LNK)
             ]]
         else:
             buttons = [[
-                InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                InlineKeyboardButton('𝖠𝖣𝖣 𝖬𝖤 𝖳𝖮 𝖸𝖮𝖴𝖱 𝖦𝖱𝖮𝖴𝖯', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+                InlineKeyboardButton('𝖬𝖮𝖵𝖨𝖤 𝖦𝖱𝖮𝖴𝖯', url=GRP_LNK)
             ],[
-                InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+                InlineKeyboardButton('𝖧𝖤𝖫𝖯', callback_data='help'),
+                InlineKeyboardButton('𝖠𝖡𝖮𝖴𝖳', callback_data='about')
             ],[
-                InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+                InlineKeyboardButton('𝖩𝖮𝖨𝖭 𝖴𝖯𝖣𝖠𝖳𝖤 𝖢𝖧𝖠𝖭𝖭𝖤𝖫', url=CHNL_LNK)
             ]]
         if CLONE_MODE == True:
             buttons.append([InlineKeyboardButton('🤖 Cʀᴇᴀᴛᴇ Yᴏᴜʀ Oᴡɴ Cʟᴏɴᴇ Bᴏᴛ 🤖', callback_data='clone')])
@@ -87,7 +87,7 @@ async def start(client, message):
             logger.error("Make sure Bot is admin in Forcesub channel")
             return
         btn = [[
-            InlineKeyboardButton("❆ Jᴏɪɴ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ❆", url=invite_link.invite_link)
+            InlineKeyboardButton("𝖩𝖮𝖨𝖭 𝖴𝖯𝖣𝖠𝖳𝖤 𝖢𝖧𝖠𝖭𝖭𝖤𝖫", url=invite_link.invite_link)
         ]]
         if message.command[1] != "subscribe":
             if REQUEST_TO_JOIN_MODE == True:
@@ -121,25 +121,25 @@ async def start(client, message):
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         if PREMIUM_AND_REFERAL_MODE == True:
             buttons = [[
-                InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                InlineKeyboardButton('𝖠𝖣𝖣 𝖬𝖤 𝖳𝖮 𝖸𝖮𝖴𝖱 𝖦𝖱𝖮𝖴𝖯', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+                InlineKeyboardButton('𝖬𝖮𝖵𝖨𝖤 𝖦𝖱𝖮𝖴𝖯', url=GRP_LNK)
             ],[
-                InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+                InlineKeyboardButton('𝖧𝖤𝖫𝖯', callback_data='help'),
+                InlineKeyboardButton('𝖠𝖡𝖮𝖴𝖳', callback_data='about')
             ],[
-                InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+                InlineKeyboardButton('𝖩𝖮𝖨𝖭 𝖴𝖯𝖣𝖠𝖳𝖤 𝖢𝖧𝖠𝖭𝖭𝖤𝖫', url=CHNL_LNK)
             ]]
         else:
             buttons = [[
-                InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                InlineKeyboardButton('𝖠𝖣𝖣 𝖬𝖤 𝖳𝖮 𝖸𝖮𝖴𝖱 𝖦𝖱𝖮𝖴𝖯', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+                InlineKeyboardButton('𝖬𝖮𝖵𝖨𝖤 𝖦𝖱𝖮𝖴𝖯', url=GRP_LNK)
             ],[
-                InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+                InlineKeyboardButton('𝖧𝖤𝖫𝖯', callback_data='help'),
+                InlineKeyboardButton('𝖠𝖡𝖮𝖴𝖳', callback_data='about')
             ],[
-                InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+                InlineKeyboardButton('𝖩𝖮𝖨𝖭 𝖴𝖯𝖣𝖠𝖳𝖤 𝖢𝖧𝖠𝖭𝖭𝖤𝖫', url=CHNL_LNK)
             ]]
         if CLONE_MODE == True:
             buttons.append([InlineKeyboardButton('🤖 Cʀᴇᴀᴛᴇ Yᴏᴜʀ Oᴡɴ Cʟᴏɴᴇ Bᴏᴛ 🤖', callback_data='clone')])
@@ -172,25 +172,25 @@ async def start(client, message):
         else:
             if PREMIUM_AND_REFERAL_MODE == True:
                 buttons = [[
-                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('𝖠𝖣𝖣 𝖬𝖤 𝖳𝖮 𝖸𝖮𝖴𝖱 𝖦𝖱𝖮𝖴𝖯', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+                    InlineKeyboardButton('𝖬𝖮𝖵𝖨𝖤 𝖦𝖱𝖮𝖴𝖯', url=GRP_LNK)
                 ],[
-                    InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+                    InlineKeyboardButton('𝖧𝖤𝖫𝖯', callback_data='help'),
+                    InlineKeyboardButton('𝖠𝖡𝖮𝖴𝖳', callback_data='about')
                 ],[
-                    InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+                    InlineKeyboardButton('𝖩𝖮𝖨𝖭 𝖴𝖯𝖣𝖠𝖳𝖤 𝖢𝖧𝖠𝖭𝖭𝖤𝖫', url=CHNL_LNK)
                 ]]
             else:
                 buttons = [[
-                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('𝖠𝖣𝖣 𝖬𝖤 𝖳𝖮 𝖸𝖮𝖴𝖱 𝖦𝖱𝖮𝖴𝖯', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+                    InlineKeyboardButton('𝖬𝖮𝖵𝖨𝖤 𝖦𝖱𝖮𝖴𝖯', url=GRP_LNK)
                 ],[
-                    InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+                    InlineKeyboardButton('𝖧𝖤𝖫𝖯', callback_data='help'),
+                    InlineKeyboardButton('𝖠𝖡𝖮𝖴𝖳', callback_data='about')
                 ],[
-                    InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+                    InlineKeyboardButton('𝖩𝖮𝖨𝖭 𝖴𝖯𝖣𝖠𝖳𝖤 𝖢𝖧𝖠𝖭𝖭𝖤𝖫', url=CHNL_LNK)
                 ]]
             if CLONE_MODE == True:
                 buttons.append([InlineKeyboardButton('🤖 Cʀᴇᴀᴛᴇ Yᴏᴜʀ Oᴡɴ Cʟᴏɴᴇ Bᴏᴛ 🤖', callback_data='clone')])
@@ -256,20 +256,18 @@ async def start(client, message):
                         text=f"•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ꜰᴏʀ ɪᴅ #{user_id} \n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\n•• ᖴᎥᒪᗴ Nᗩᗰᗴ : {fileName}",
                         quote=True,
                         disable_web_page_preview=True,
-                        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download", url=download),  # we download Link
-                                                            InlineKeyboardButton('🖥️ Watch online', url=stream)]])  # web stream Link
+                        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("𝖥𝖠𝖲𝖳 𝖣𝖮𝖶𝖭𝖫𝖮𝖠𝖣", url=download),  # we download Link
+                                                            InlineKeyboardButton('𝖶𝖠𝖳𝖢𝖧 𝖮𝖭𝖫𝖨𝖭𝖤', url=stream)]])  # web stream Link
                     )
                 if STREAM_MODE == True:
                     button = [[
-                        InlineKeyboardButton("🚀 Fast Download 🚀", url=download),  # we download Link
-                        InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream)
-                    ],[
-                        InlineKeyboardButton("• ᴡᴀᴛᴄʜ ɪɴ ᴡᴇʙ ᴀᴘᴘ •", web_app=WebAppInfo(url=stream))
+                        InlineKeyboardButton("𝖥𝖠𝖲𝖳 𝖣𝖮𝖶𝖭𝖫𝖮𝖠𝖣", url=download),  # we download Link
+                        InlineKeyboardButton('𝖶𝖠𝖳𝖢𝖧 𝖮𝖭𝖫𝖨𝖭𝖤', url=stream)
                     ]]
                 else:
                     button = [[
-                        InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                        InlineKeyboardButton('𝖲𝖴𝖯𝖯𝖮𝖱𝖳 𝖦𝖱𝖮𝖴𝖯', url=f'https://t.me/{SUPPORT_CHAT}'),
+                        InlineKeyboardButton('𝖴𝖯𝖣𝖠𝖳𝖤 𝖢𝖧𝖠𝖭𝖭𝖤𝖫', url=CHNL_LNK)
                     ]]
                 msg = await client.send_cached_media(
                     chat_id=message.from_user.id,
@@ -451,12 +449,12 @@ async def start(client, message):
                     return
             if STREAM_MODE == True:
                 button = [[
-                    InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') 
+                    InlineKeyboardButton('𝖥𝖠𝖲𝖳 𝖣𝖮𝖶𝖭𝖫𝖮𝖠𝖣 & 𝖶𝖠𝖳𝖢𝖧 𝖮𝖭𝖫𝖨𝖭𝖤', callback_data=f'generate_stream_link:{file_id}') 
                 ]]
             else:
                 button = [[
-                    InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                    InlineKeyboardButton('𝖲𝖴𝖯𝖯𝖮𝖱𝖳 𝖦𝖱𝖮𝖴𝖯', url=f'https://t.me/{SUPPORT_CHAT}'),
+                    InlineKeyboardButton('𝖴𝖯𝖣𝖠𝖳𝖤 𝖢𝖧𝖠𝖭𝖭𝖤𝖫', url=CHNL_LNK)
                 ]]
             msg = await client.send_cached_media(
                 chat_id=message.from_user.id,
@@ -517,12 +515,12 @@ async def start(client, message):
                     return
             if STREAM_MODE == True:
                 button = [[
-                    InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @KingVJ01
+                    InlineKeyboardButton('𝖥𝖠𝖲𝖳 𝖣𝖮𝖶𝖭𝖫𝖮𝖠𝖣 & 𝖶𝖠𝖳𝖢𝖧 𝖮𝖭𝖫𝖨𝖭𝖤', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @KingVJ01
                 ]]
             else:
                 button = [[
-                    InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                    InlineKeyboardButton('𝖲𝖴𝖯𝖯𝖮𝖱𝖳 𝖦𝖱𝖮𝖴𝖯', url=f'https://t.me/{SUPPORT_CHAT}'),
+                    InlineKeyboardButton('𝖴𝖯𝖣𝖠𝖳𝖤 𝖢𝖧𝖠𝖭𝖭𝖤𝖫', url=CHNL_LNK)
                 ]]
             msg = await client.send_cached_media(
                 chat_id=message.from_user.id,
@@ -582,12 +580,12 @@ async def start(client, message):
             return
     if STREAM_MODE == True:
         button = [[
-            InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @KingVJ01
+            InlineKeyboardButton('𝖥𝖠𝖲𝖳 𝖣𝖮𝖶𝖭𝖫𝖮𝖠𝖣 & 𝖶𝖠𝖳𝖢𝖧 𝖮𝖭𝖫𝖨𝖭𝖤', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @KingVJ01
         ]]
     else:
         button = [[
-            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-            InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+            InlineKeyboardButton('𝖲𝖴𝖯𝖯𝖮𝖱𝖳 𝖦𝖱𝖮𝖴𝖯', url=f'https://t.me/{SUPPORT_CHAT}'),
+            InlineKeyboardButton('𝖴𝖯𝖣𝖠𝖳𝖤 𝖢𝖧𝖠𝖭𝖭𝖤𝖫', url=CHNL_LNK)
         ]]
     msg = await client.send_cached_media(
         chat_id=message.from_user.id,
@@ -771,7 +769,7 @@ async def settings(client, message):
         buttons = [
             [
                 InlineKeyboardButton(
-                    'Rᴇsᴜʟᴛ Pᴀɢᴇ',
+                    '𝖱𝖤𝖲𝖴𝖫𝖳 𝖯𝖠𝖦𝖤',
                     callback_data=f'setgs#button#{settings["button"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
@@ -781,7 +779,7 @@ async def settings(client, message):
             ],
             [
                 InlineKeyboardButton(
-                    'Fɪʟᴇ Sᴇɴᴅ Mᴏᴅᴇ',
+                    '𝖥𝖨𝖫𝖤 𝖲𝖤𝖭𝖣 𝖬𝖮𝖣𝖤',
                     callback_data=f'setgs#botpm#{settings["botpm"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
@@ -791,7 +789,7 @@ async def settings(client, message):
             ],
             [
                 InlineKeyboardButton(
-                    'Pʀᴏᴛᴇᴄᴛ Cᴏɴᴛᴇɴᴛ',
+                    '𝖯𝖱𝖮𝖳𝖤𝖢𝖳 𝖢𝖮𝖭𝖳𝖤𝖭𝖳',
                     callback_data=f'setgs#file_secure#{settings["file_secure"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
@@ -801,7 +799,7 @@ async def settings(client, message):
             ],
             [
                 InlineKeyboardButton(
-                    'Iᴍᴅʙ',
+                    '𝖨𝖬𝖣𝖡',
                     callback_data=f'setgs#imdb#{settings["imdb"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
@@ -811,7 +809,7 @@ async def settings(client, message):
             ],
             [
                 InlineKeyboardButton(
-                    'Sᴘᴇʟʟ Cʜᴇᴄᴋ',
+                    '𝖲𝖯𝖤𝖫𝖫 𝖢𝖧𝖤𝖢𝖪',
                     callback_data=f'setgs#spell_check#{settings["spell_check"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
@@ -821,7 +819,7 @@ async def settings(client, message):
             ],
             [
                 InlineKeyboardButton(
-                    'Wᴇʟᴄᴏᴍᴇ Msɢ',
+                    '𝖶𝖤𝖫𝖢𝖮𝖬𝖤 𝖬𝖲𝖦',
                     callback_data=f'setgs#welcome#{settings["welcome"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
@@ -831,7 +829,7 @@ async def settings(client, message):
             ],
             [
                 InlineKeyboardButton(
-                    'Aᴜᴛᴏ-Dᴇʟᴇᴛᴇ',
+                    '𝖠𝖴𝖳𝖮 𝖣𝖤𝖫𝖤𝖳𝖤',
                     callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
@@ -841,7 +839,7 @@ async def settings(client, message):
             ],
             [
                 InlineKeyboardButton(
-                    'Aᴜᴛᴏ-Fɪʟᴛᴇʀ',
+                    '𝖠𝖴𝖳𝖮 𝖥𝖨𝖫𝖳𝖤𝖱',
                     callback_data=f'setgs#auto_ffilter#{settings["auto_ffilter"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
@@ -851,7 +849,7 @@ async def settings(client, message):
             ],
             [
                 InlineKeyboardButton(
-                    'Mᴀx Bᴜᴛᴛᴏɴs',
+                    '𝖬𝖠𝖷 𝖡𝖴𝖳𝖳𝖮𝖭',
                     callback_data=f'setgs#max_btn#{settings["max_btn"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
@@ -861,7 +859,7 @@ async def settings(client, message):
             ],
             [
                 InlineKeyboardButton(
-                    'ShortLink',
+                    '𝖲𝖧𝖮𝖱𝖳𝖫𝖨𝖭𝖪',
                     callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
@@ -874,7 +872,7 @@ async def settings(client, message):
         buttons = [
             [
                 InlineKeyboardButton(
-                    'Rᴇsᴜʟᴛ Pᴀɢᴇ',
+                    '𝖱𝖤𝖲𝖴𝖫𝖳 𝖯𝖠𝖦𝖤',
                     callback_data=f'setgs#button#{settings["button"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
@@ -884,7 +882,7 @@ async def settings(client, message):
             ],
             [
                 InlineKeyboardButton(
-                    'Fɪʟᴇ Sᴇɴᴅ Mᴏᴅᴇ',
+                    '𝖥𝖨𝖫𝖤 𝖲𝖤𝖭𝖣 𝖬𝖮𝖣𝖤',
                     callback_data=f'setgs#botpm#{settings["botpm"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
@@ -894,7 +892,7 @@ async def settings(client, message):
             ],
             [
                 InlineKeyboardButton(
-                    'Pʀᴏᴛᴇᴄᴛ Cᴏɴᴛᴇɴᴛ',
+                    '𝖯𝖱𝖮𝖳𝖤𝖢𝖳 𝖢𝖮𝖭𝖳𝖤𝖭𝖳',
                     callback_data=f'setgs#file_secure#{settings["file_secure"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
@@ -904,7 +902,7 @@ async def settings(client, message):
             ],
             [
                 InlineKeyboardButton(
-                    'Iᴍᴅʙ',
+                    '𝖨𝖬𝖣𝖡',
                     callback_data=f'setgs#imdb#{settings["imdb"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
@@ -914,7 +912,7 @@ async def settings(client, message):
             ],
             [
                 InlineKeyboardButton(
-                    'Sᴘᴇʟʟ Cʜᴇᴄᴋ',
+                    '𝖲𝖯𝖤𝖫𝖫 𝖢𝖧𝖤𝖢𝖪',
                     callback_data=f'setgs#spell_check#{settings["spell_check"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
@@ -924,7 +922,7 @@ async def settings(client, message):
             ],
             [
                 InlineKeyboardButton(
-                    'Wᴇʟᴄᴏᴍᴇ Msɢ',
+                    '𝖶𝖤𝖫𝖢𝖮𝖬𝖤 𝖬𝖲𝖦',
                     callback_data=f'setgs#welcome#{settings["welcome"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
@@ -934,7 +932,7 @@ async def settings(client, message):
             ],
             [
                 InlineKeyboardButton(
-                    'Aᴜᴛᴏ-Dᴇʟᴇᴛᴇ',
+                    '𝖠𝖴𝖳𝖮 𝖣𝖤𝖫𝖤𝖳𝖤',
                     callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
@@ -944,7 +942,7 @@ async def settings(client, message):
             ],
             [
                 InlineKeyboardButton(
-                    'Aᴜᴛᴏ-Fɪʟᴛᴇʀ',
+                    '𝖠𝖴𝖳𝖮 𝖥𝖨𝖫𝖳𝖤𝖱',
                     callback_data=f'setgs#auto_ffilter#{settings["auto_ffilter"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
@@ -954,7 +952,7 @@ async def settings(client, message):
             ],
             [
                 InlineKeyboardButton(
-                    'Mᴀx Bᴜᴛᴛᴏɴs',
+                    '𝖬𝖠𝖷 𝖡𝖴𝖳𝖳𝖮𝖭',
                     callback_data=f'setgs#max_btn#{settings["max_btn"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
@@ -965,8 +963,8 @@ async def settings(client, message):
         ]
     if settings is not None:
         btn = [[
-                InlineKeyboardButton("Oᴘᴇɴ Hᴇʀᴇ ↓", callback_data=f"opnsetgrp#{grp_id}"),
-                InlineKeyboardButton("Oᴘᴇɴ Iɴ PM ⇲", callback_data=f"opnsetpm#{grp_id}")
+                InlineKeyboardButton("𝖮𝖯𝖤𝖭 𝖧𝖤𝖱𝖤", callback_data=f"opnsetgrp#{grp_id}"),
+                InlineKeyboardButton("𝖮𝖯𝖤𝖭 𝖨𝖭 𝖯𝖬", callback_data=f"opnsetpm#{grp_id}")
               ]]
 
         reply_markup = InlineKeyboardMarkup(buttons)
