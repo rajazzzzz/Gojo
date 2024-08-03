@@ -1,6 +1,4 @@
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+#MaviMods
 
 import logging
 import logging.config
@@ -27,7 +25,7 @@ from pyrogram import Client
 from info import *
 
 
-class TechVJXBot(Client):
+class MaviBot(Client):
 
     def __init__(self):
         super().__init__(
@@ -82,7 +80,7 @@ class TechVJXBot(Client):
                 yield message
                 current += 1
       
-TechVJBot = TechVJXBot()
+MaviV3Bot = MaviBot()
 
 multi_clients = {}
 work_loads = {}
