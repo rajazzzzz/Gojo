@@ -5,7 +5,7 @@ import logging
 from info import *
 from pyrogram import Client
 from v3bot.util.config_parser import TokenParser
-from v3bot.bot import multi_clients, work_loads, TechVJBot
+from v3bot.bot import multi_clients, work_loads, MaviV3Bot
 
 
 async def initialize_clients():
