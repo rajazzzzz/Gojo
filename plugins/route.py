@@ -4,7 +4,7 @@ import re, math, logging, secrets, mimetypes, time
 from info import *
 from aiohttp import web
 from aiohttp.http_exceptions import BadStatusLine
-from v3bot.bot import multi_clients, work_loads, TechVJBot
+from v3bot.bot import multi_clients, work_loads, MaviV3Bot
 from v3bot.server.exceptions import FIleNotFound, InvalidHash
 from v3bot import StartTime, __version__
 from v3bot.util.custom_dl import ByteStreamer
