@@ -17,7 +17,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'MaviV3Bot')
 API_ID = int(environ.get('API_ID', '20581507'))
 API_HASH = environ.get('API_HASH', '60ee9616e45c8a8a429fd8390b53fe74')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6758152186:AAHMimr7kXXq2PpKLchMv0q_SRkk3R-J2YM")
+BOT_TOKEN = environ.get('BOT_TOKEN', "6524962251:AAGzGQd7X4U5WNlbsT8S-gfatXhWo1_jq38")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
