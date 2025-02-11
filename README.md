@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://telegra.ph/file/504babe67ae701cb458f8.jpg" alt="Mavi Logo">
+  <img src="https://envs.sh/at.jpg" alt="Mavi Logo">
 </p>
 <h1 align="center">
   Mavi Movie V3
@@ -32,7 +32,7 @@
 - [x] Custom Tutorial Button
 - [x] Bot Pm File Auto Delete 
 
-Join My <a href='https://telegram.dog/MODSMAVI'>Update Channel</a> For More Update Regarding Repo.</b>
+Join My <a href='https://t.me/cinema_house_update'>Update Channel</a> For More Update Regarding Repo.</b>
 
 ## Commands
 ```
