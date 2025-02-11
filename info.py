@@ -15,41 +15,41 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'MaviMon')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
+API_ID = int(environ.get('API_ID', '20945686'))
+API_HASH = environ.get('API_HASH', '862d5b32031f8a9b9a547aca40ef1640')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
-PICS = (environ.get('PICS', 'https://telegra.ph/file/504babe67ae701cb458f8.jpg https://telegra.ph/file/504babe67ae701cb458f8.jpg')).split() #SAMPLE PIC
-NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/504babe67ae701cb458f8.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/How_To_Open_Linkl")
+PICS = (environ.get('PICS', 'https://envs.sh/ae.jpg https://envs.sh/ab.jpg')).split() #SAMPLE PIC
+NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/504babe67ae701cb458f8.jpg https://envs.sh/aP.jpg https://envs.sh/at.jpg")
+MELCOW_VID = environ.get("MELCOW_VID", "https://envs.sh/at.jpg")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
 
 # Admins, Channels & Users
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001934056027'))
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '2126131508').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002482323036'))
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '8047797327').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002359583084').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '8047797327').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # auth_channel means force subscribe channel.
 # if REQUEST_TO_JOIN_MODE is true then force subscribe work like request to join fsub, else if false then work like normal fsub.
-REQUEST_TO_JOIN_MODE = bool(environ.get('REQUEST_TO_JOIN_MODE', False)) # Set True Or False
+REQUEST_TO_JOIN_MODE = bool(environ.get('REQUEST_TO_JOIN_MODE', True)) # Set True Or False
 TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', False)) # Set True Or False (This try again button is only for request to join fsub not for normal fsub)
-auth_channel = environ.get('AUTH_CHANNEL', '-1002045771395') # give your force subscribe channel id here else leave it blank
+auth_channel = environ.get('AUTH_CHANNEL', '-1002477962995') # give your force subscribe channel id here else leave it blank
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-1001934056027')
+reqst_channel = environ.get('REQST_CHANNEL_ID', '0')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '')
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002335921221')
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002359583084')).split()]
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "LazyDeveloper")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://mharmy:mharmy@mharmy.07flt.mongodb.net/?retryWrites=true&w=majority&appName=mharmy")
+DATABASE_NAME = environ.get('DATABASE_NAME', "mharmy")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Premium And Referal Settings
@@ -68,14 +68,14 @@ CLONE_DATABASE_URI = environ.get('CLONE_DATABASE_URI', "") # Necessary If clone 
 PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', '') # Public Channel Username Without @ or without https://t.me/ and Bot Is Admin With Full Right.
 
 # Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/cinemabotx')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/MODSMAVI')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/cinema_house_24x7')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/cinema_house_update')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/How_To_Open_Linkl')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'mavibot_support') # Support Chat Link Without https:// or @
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'cinema_house_support') # Support Chat Link Without https:// or @
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
-PM_SEARCH = bool(environ.get('PM_SEARCH', True))
+PM_SEARCH = bool(environ.get('PM_SEARCH', False))
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
